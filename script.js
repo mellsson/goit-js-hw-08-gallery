@@ -47,7 +47,7 @@ function openImgGallery (event)  {
     if (event.target.nodeName !== 'IMG') {
         return;
     }
-    console.dir(lightBoxImages)
+    
     lightBox.classList.add('is-open');
 
     lightBoxImages.src=event.target.dataset.source;
