@@ -5,7 +5,7 @@ const lightBox = document.querySelector('.js-lightbox');
 const closeLightBtn = document.querySelector('button[data-action="close-lightbox"]')
 const closeLightOverlay=document.querySelector('.lightbox__overlay');
 const lightBoxImages =document.querySelector('.lightbox__image');
-
+let indexImgGallery = 0;
 
 const createGalleryList = (galleryItem,index )=> {
 
@@ -39,8 +39,8 @@ galleryRef.append(...createGalleryItems);
 galleryRef.addEventListener('click', openImgGallery);
 closeLightBtn.addEventListener('click',closeImgGallery);
 closeLightOverlay.addEventListener('click',closeImgGallery);
-let indexImgGallery = 0;
-let srcImgGallery = '';
+
+
 function openImgGallery (event)  {
     event.preventDefault();
 
